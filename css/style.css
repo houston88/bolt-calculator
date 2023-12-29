@@ -250,16 +250,36 @@ textarea {
 
 /* app styles */
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .fieldset-style {
+  display: inline;
+  min-width: 25rem;
   border: 3px solid #4238ca;
   background: #f6f8ff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.container {
+.form-row {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: .2rem;
+}
+
+label {
+  white-space: nowrap;
+  padding-right: 1rem;
 }
 
 .form-control {
-  display: block;
+  width: 12rem;
+}
+
+.form-row.button-bar {
+  padding-top: 1rem;
 }

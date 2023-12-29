@@ -28,20 +28,75 @@
     <form action="" id="calcForm">
       <fieldset class="fieldset-style">
         <legend>Bolt Calculator</legend>
-        <label for="bolt">Weight of Bolt Cardboard (lbs): </label>
-        <input type="number" id="bolt" step="0.1" class="form-control" placeholder="Weight of Bolt Cardboard">
-        <label for="yard">Weight of 1 Yard (lbs): </label>
-        <input type="number" id="yard" step="0.1" class="form-control" placeholder="Weight of 1 Yard">
-        <label for="weight">Weight of Fabric (lbs): </label>
-        <input type="number" id="weight" step="0.1" class="form-control" placeholder="Total Weight">
-        <br>
-        <button type="submit">Calculate</button>
-        <br>
+        
+        <div class="form-row">
+          <label for="bolt">Bolts: </label>
+          <div class="form-control">
+            <select name="bolt_weight" id="bolt_select">
+              <option value="5">5oz - Hopscotch / Moda</option>
+              <option value="6">6oz - Figo / Tilda</option>
+            </select>
+          </div>
+        </div>
+
+        <!--
+        <div class="form-row">
+          <label for="bolt">Weight of Bolt (oz): </label>
+          <div class="form-control">
+            <input type="number" id="bolt" step="1" value="5"  placeholder="Oz">
+            <span>oz.</span>
+          </div>
+        </div>
+        -->
+
+        <div class="form-row"> 
+          <label for="yard">Weight of 1 Yard (oz): </label>
+          <div class="form-control">
+            <input type="number" id="yard" step="1" placeholder="Oz">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="weight">Weight of Fabric: </label>
+          <div class="form-control">
+            <input type="number" id="weight_pounds" step="1" placeholder="Pounds">
+            <span>lb.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <label></label>
+          <div class="form-control">
+            <input type="number" id="weight_oz" step="1"  placeholder="Ounces">
+            <span>oz.</span>
+          </div>
+        </div>
+
+        <div class="form-row button-bar">
+          <span></span>
+          <div class="form-control">
+            <button type="submit">Calculate</button>
+          </div>
+        </div>
         <hr>
-        <label for="calc">Number of Yards: </label>
-        <input type="string" id="calc" readonly="true" class="form-control" placeholder="Total Yards">
+        
+        <div class="form-row">
+          <label for="calc">Number of Yards:</label>
+          <div class="form-control">
+            <input type="string" id="calc" readonly="true" placeholder="Total Yards">
+          </div>
+        </div>
       </fieldset>
     </form>
+
+    <p> 
+      Common Empty Bolt Cardboard Weights: <br>
+      Figo: 6 oz<br>
+      Hopscotch: 5 oz <br>
+      Moda: 5 oz <br>
+      Tilda: 6 oz <br>
+    </p>
+
+ 
   </div>
 
   <script src="js/app.js"></script>
