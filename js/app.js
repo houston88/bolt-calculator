@@ -27,9 +27,11 @@ calcForm.addEventListener("submit", (e) => {
   }
 });
 
+/*
 // update bolt weight if dropdown changes
 const boltSelectElement = document.querySelector("#bolt_select");
 boltSelectElement.addEventListener("change", (event) => {
   // update bolt input
   document.querySelector("#bolt").value = event.target.value;
 });
+*/
